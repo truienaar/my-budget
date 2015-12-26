@@ -1,10 +1,10 @@
 package be.vansichen.raf.mybudget.model;
 
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.Date;
 
-import static org.junit.Assert.*;
+import javax.swing.text.DateFormatter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class TransactionRepositoryTest {
 
@@ -13,14 +13,15 @@ public class TransactionRepositoryTest {
 
         TransactionRepository transactionRepository = new TransactionRepository();
 
-        transactionRepository.addPlannedIncome(LocalDate.of(2016, Month.JANUARY, 1), "Planned Income 1", 101);
-        transactionRepository.addPlannedIncome(LocalDate.of(2016, Month.FEBRUARY, 1), "Planned Income 2", 102);
-        transactionRepository.addPlannedExpense(LocalDate.of(2016, Month.JANUARY, 2), "Planned Expense 1", 11);
-        transactionRepository.addPlannedExpense(LocalDate.of(2016, Month.FEBRUARY, 2), "Planned Expense 2", 12);
+        transactionRepository.addMonthlyPlannedIncome(2016, "Maandloon", 2750);
+        transactionRepository.addPlannedIncome("31/05/2016", "Bonus & vakantiegeld", 7500);
+        transactionRepository.addPlannedIncome("30/11/2016", "Eindejaarspremie", 2100);
+        transactionRepository.addPlannedIncome("31/12/2016", "Terugbetaling belastingen", 2000);
 
         String runningBalanceReport = transactionRepository.reportRunningBalance();
 
         System.out.println(runningBalanceReport);
 
     }
-}
+
+ }
