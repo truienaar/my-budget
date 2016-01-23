@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<budget-plan year="2016" account="raf" initial-balance="5000.00">
+    <monthly-planned-income     day-of-month="LAST"     id="PI-010"     description="Maandloon"                   amount="2800"/>
+    <onetime-planned-income     month-day="31-05"       id="PI-020"     description="Bonus &amp; vakantiegeld"    amount="7500"/>
+    <onetime-planned-income     month-day="30-11"       id="PI-030"     description="Eindejaarspremie"            amount="2100"/>
+    <onetime-planned-income     month-day="31-12"       id="PI-040"     description="Terugbetaling belastingen"   amount="2000"/>
+
+    <monthly-planned-expense    day-of-month="FIRST"    ref="PE-010"    description="Maandelijkse familiale kosten" amount="1200"/>
+    <monthly-planned-expense    day-of-month="FIRST"    ref="PE-020"    description="Maandelijkse persoonlijke kosten (horeca, kleding, fietsonderhoud, geschenken, zakgeld)" amount="425"/>
+    <monthly-planned-expence    day-of-month="D20"      ref="PE-030"    description="Aflossing woningkrediet 726-8759372-61" amount="354.40"/>
+    <monthly-planned-expence    day-of-month="LAST"     ref="PE-040"    description="Aflossing woningkrediet 726-2407533-73" amount="333.16"/>
+    <onetime-planned-expence    month-day="01-01"       ref="PE-050"    description="Interieur - Salon meubelen (saldo)" amount="1400"/>
+    <onetime-planned-expence    month-day="01-03"       ref="PE-060"    description="Wintersportvakantie (saldo)" amount="2700"/>
+    <onetime-planned-expence    month-day="01-06"       ref="PE-070"    description="Renovatie platte daken" amount="7500"/>
+    <onetime-planned-expence    month-day="01-08"       ref="PE-080"    description="Zomervakantie" amount="1000"/>
+    <onetime-planned-expence    month-day="01-09"       ref="PE-090"    description="Onroerende voorheffing" amount="950"/>
+    <onetime-planned-expence    month-day="30-11"       ref="PE-100"    description="Pensioensparen" amount="1250"/>
+    <onetime-planned-expence    month-day="31-11"       ref="PE-110"    description="Schuldsaldoverzekering" amount="384.54"/>
+    <onetime-planned-expence    month-day="01-12"       ref="PE-120"    description="Interieur - Eetkamer meubelen" amount="1500"/>
+    <onetime-planned-expence    month-day="15-12"       ref="PE-130"    description="Verzekering Woning + Familiale" amount="550"/>
+    <onetime-planned-expence    month-day="31-12"       ref="PE-140"    description="Schuldsaldoverzekering" amount="161.44"/>
+
+    <actual-expence             month-day="01-01"       ref="PE-010"    description="Maandelijkse familiale kosten" amount="1200"/>
+    <actual-expence             month-day="01-01"       ref="PE-020"    description="Maandelijkse persoonlijke kosten" amount="425"/>
+    <actual-expence             month-day="20-01"       ref="PE-030"    description="Aflossing woningkrediet 726-8759372-61" amount="354.40"/>
+    <actual-expence             month-day="20-01"       ref="PE-050"    description="Interieur - Salon meubelen (saldo)" amount="1400"/>
+
+</budget-plan>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="budget-plan" type="BudgetPlan"/>
+
+  <xs:complexType name="BudgetPlan">
+    <xs:sequence>
+      <xs:element type="MonthlyPlannedIncome" name="monthly-planned-income" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="OnetimePlannedIncome" name="onetime-planned-income" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="MonthlyPlannedExpense" name="monthly-planned-expense" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="OnetimePlannedExpence" name="onetime-planned-expence" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:short" name="year" use="required"/>
+    <xs:attribute type="xs:string" name="account" use="required"/>
+    <xs:attribute type="xs:float" name="initial-balance" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="OnetimePlannedIncome">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="month-day" use="required"/>
+        <xs:attribute type="xs:string" name="description" use="required"/>
+        <xs:attribute type="xs:short" name="amount" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="OnetimePlannedExpence">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="month-day" use="required"/>
+        <xs:attribute type="xs:string" name="description" use="required"/>
+        <xs:attribute type="xs:float" name="amount" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="MonthlyPlannedIncome">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="day-of-month" use="required"/>
+        <xs:attribute type="xs:string" name="description" use="required"/>
+        <xs:attribute type="xs:short" name="amount" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="MonthlyPlannedExpense">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="day-of-month" use="required"/>
+        <xs:attribute type="xs:string" name="description" use="required"/>
+        <xs:attribute type="xs:short" name="amount" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

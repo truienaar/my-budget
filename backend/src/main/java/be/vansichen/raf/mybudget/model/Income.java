@@ -8,4 +8,8 @@ abstract class Income extends Transaction {
         super(date, description, amount);
     }
 
+    public double getSignedAmount(){
+        return getAmount();
+    }
+
 }

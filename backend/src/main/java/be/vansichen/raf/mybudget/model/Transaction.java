@@ -1,9 +1,8 @@
 package be.vansichen.raf.mybudget.model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-abstract class Transaction {
+public abstract class Transaction {
 
     private LocalDate date;
     private String description;
@@ -15,15 +14,18 @@ abstract class Transaction {
         this.amount = amount;
     }
 
-    LocalDate getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    double getAmount() {
+    public double getAmount() {
         return amount;
     }
+
+    public abstract double getSignedAmount();
+
 }

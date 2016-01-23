@@ -8,4 +8,8 @@ abstract class Expense extends Transaction {
         super(date, description, amount);
     }
 
+    public double getSignedAmount(){
+        return -1 * getAmount();
+    }
+
 }
