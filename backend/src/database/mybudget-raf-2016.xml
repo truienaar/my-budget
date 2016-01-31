@@ -24,5 +24,8 @@
     <actual-expence             month-day="01-01"       ref="PE-020"    description="Maandelijkse persoonlijke kosten" amount="425"/>
     <actual-expence             month-day="20-01"       ref="PE-030"    description="Aflossing woningkrediet 726-8759372-61" amount="354.40"/>
     <actual-expence             month-day="20-01"       ref="PE-050"    description="Interieur - Salon meubelen (saldo)" amount="1400"/>
+    <actual-income              month-day="28-01"       ref="PI-010"    description="Maandloon Jan" amount="2780"/>
+    <actual-expence             month-day="01-02"       ref="PE-010"    description="Maandelijkse familiale kosten" amount="1200"/>
+    <actual-expence             month-day="01-02"       ref="PE-020"    description="Maandelijkse persoonlijke kosten" amount="425"/>
 
 </budget-plan>
